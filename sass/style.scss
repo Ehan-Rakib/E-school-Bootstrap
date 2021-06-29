@@ -1,0 +1,408 @@
+@import "__variable";
+@import "__default";
+
+
+
+header {
+    background-color: $bg_color;
+
+    .navbar-brand {
+        img {
+            width: 200px;
+        }
+    }
+
+
+    .navbar-light {
+        .navbar-nav {
+            li {
+                .nav-link {
+                    color: $primary-color;
+                    font-size: 18px;
+                    letter-spacing: 1px;
+                    padding: 5px 20px;
+                    border-radius: 25px;
+                    transition: all 0.3s ease-in-out;
+                    -webkit-transition: all 0.3s ease-in-out;
+                    -moz-transition: all 0.3s ease-in-out;
+
+
+
+
+                    &:hover {
+                        color: #fff;
+                        background: $secondary-color;
+
+
+                    }
+                }
+
+                &:last-child .nav-link {
+                    color: #fff;
+                    background: $secondary-color;
+                    font-size: 16px;
+                }
+            }
+        }
+
+
+    }
+
+    h4 {
+        color: red;
+        font-size: 18px;
+    }
+
+    h1 {
+        color: $primary-color;
+        font-size: 70px;
+        font-weight: 600;
+        line-height: 1.1;
+
+        span {
+
+            color: $secondary-color;
+        }
+    }
+
+    p {
+
+        color: $primary-color;
+        opacity: 0.7;
+        line-height: 1.8;
+    }
+
+
+
+}
+
+.btn-custom {
+    background-color: $secondary-color;
+    color: #fff;
+    font-size: 14px;
+    letter-spacing: 1px;
+    padding: 6px 12px;
+    border-radius: 25px;
+    transition: all 0.3s ease-in-out;
+    text-transform: capitalize;
+    border: 2px solid $secondary-color;
+
+    &:hover {
+        color: $secondary-color;
+        background-color: transparent;
+
+
+
+    }
+}
+
+.books-section {
+    margin: 50px 0;
+
+    .book {
+        background-color: $bg-color;
+        text-align: center;
+        padding: 40px 20px;
+        border-radius: 10px;
+        transition: all 0.3s ease-in-out;
+
+
+        img {
+            width: 60px;
+
+        }
+
+        h3 {
+            font-size: 26px;
+            margin: 10px 0 0;
+            font-weight: 700;
+        }
+
+        p {
+            color: $primary-color;
+            opacity: 0.7;
+            line-height: 1.8;
+            margin-bottom: 0;
+        }
+
+        &:hover {
+            background-color: #fff;
+            box-shadow: 1px 1px 20px 6px #b1b1b14f;
+        }
+    }
+}
+
+.heading {
+    text-align: center;
+    padding: 50px 0;
+
+    letter-spacing: 1px;
+
+    h1 {
+        font-size: 40px;
+        font-weight: 600;
+
+    }
+}
+
+.courses-section {
+    .course {
+        border-radius: 10px;
+        border: none;
+        box-shadow: 0px 5px 12px 4px #b1b1b14f;
+
+        .card-body {
+            img {}
+
+            h5 {
+                font-size: 20px;
+                margin: 10px 0 0;
+            }
+
+            p {
+                color: $primary-color;
+                opacity: 0.7;
+                line-height: 1.8;
+                margin-bottom: 10px;
+            }
+
+            a {}
+
+            .nav {
+                align-items: center;
+                margin-top: 10px;
+
+                li {
+                    i {}
+
+                    span {
+                        font-size: 14px;
+                        font-weight: 500;
+                    }
+                }
+
+
+
+            }
+        }
+    }
+
+}
+
+.testimonial-section {
+    padding: 50px 0;
+
+    img {
+        width: 120px;
+        border-radius: 50%;
+    }
+}
+
+
+footer {
+    background-color: #282531;
+    color: #fff;
+    padding-top: 40px;
+
+    p {
+        color: #fff;
+        line-height: 1.6;
+    }
+
+    h3 {}
+
+    ul {
+        li {
+            a {
+                list-style: none;
+                color: #fff;
+                text-decoration: none;
+
+                display: inline-block;
+                padding: 3px 0;
+                transition: 0.3s;
+
+                &:hover {
+                    color: #fff;
+                    opacity: 0.7;
+                }
+            }
+        }
+    }
+
+    .copyright {
+        text-align: center;
+        padding: 20px;
+
+        p {
+
+            color: #fff;
+            opacity: 0.7;
+            line-height: 1.6;
+            margin-bottom: 0px;
+            font-size: 15px;
+
+            a {
+                list-style: none;
+                color: $secondary-color;
+                text-decoration: none;
+
+            }
+        }
+    }
+}
+
+
+
+@media(max-width:1199px) {
+    header h1 {
+        font-size: 55px;
+    }
+
+    .books-section .book h3 {
+        font-size: 22px;
+    }
+}
+
+@media(max-width:991px) {
+    .navbar-nav {
+
+        flex-direction: row;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    header h1 {
+        font-size: 40px;
+    }
+
+    .course p {
+        font-size: 14px;
+
+    }
+
+    .books-section .book h3 {
+        font-size: 15px;
+    }
+
+    .books-section .book img {
+        width: 45px;
+    }
+
+    .books-section .book {
+
+        padding-top: 30px;
+    }
+
+    .card-body {
+
+        padding: 6px;
+    }
+
+    .testimonial-section .info,
+    .testimonial-section p {
+
+        margin-bottom: 16px !important;
+        text-align: center !important;
+    }
+
+    .testimonial-section img {
+        width: 80px;
+    }
+}
+
+@media(max-width:767px) {
+    header {
+        text-align: center;
+    }
+
+    header .navbar-light .navbar-nav li .nav-link {
+        font-size: 15px;
+    }
+
+    header .col-md img {
+        max-width: 350px;
+        margin-top: 30px;
+    }
+
+    .books-section .book {
+        margin-bottom: 20px;
+    }
+
+    .heading h1 {
+        font-size: 32px;
+
+
+    }
+}
+
+@media(max-width:575px) {
+
+    .navbar-nav {
+
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    header h1 {
+        font-size: 36px;
+    }
+
+    header .col-md img {
+        max-width: 300px;
+        margin-top: 20px;
+    }
+
+    .card-body {
+
+        padding: 7px;
+    }
+
+    .card.course {
+        margin-bottom: 25px;
+    }
+
+    footer {
+        text-align: center;
+
+        h3 {
+            font-size: 18px;
+        }
+
+        ul li a {
+
+            font-size: 14px;
+        }
+    }
+
+    .card.course {
+        margin-bottom: 25px;
+        width: 300px;
+        margin: 0 auto 20px;
+    }
+
+}
+
+@media(max-width:400px) {
+
+    .books-section .book {
+        padding: 10px;
+
+
+    }
+
+    .heading h1 {
+        font-size: 25px;
+        padding: 0;
+    }
+
+    .heading {
+
+        padding: 10px 0;
+
+
+    }
+}
